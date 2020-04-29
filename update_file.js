@@ -1,6 +1,6 @@
-var fs = required('fs');
+var fs = require('fs');
 
-fs.appendFile('./untitled.txt', 'Nama saya Rejak Nur Rochmat', function(err) {
+fs.writeFile('./untitled.txt', 'Nama saya Rejak Nur Rochmat', function(err) {
     if(err) throw err;
     console.log('Updated');
 });
